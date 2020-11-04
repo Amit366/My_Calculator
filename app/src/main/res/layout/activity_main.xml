@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageCal"
+        android:layout_width="wrap_content"
+        android:layout_height="143dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/calculator" />
+
+    <EditText
+        android:id="@+id/edFirstValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="@string/enter_first_number"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edSecondNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:hint="@string/enter_second_number"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/edAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:padding="10dp"
+        android:text="@string/plus"
+        android:onClick="Add"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:padding="10dp"
+        android:text="@string/minus"
+        android:onClick="Sub"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btMultiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:padding="10dp"
+        android:text="@string/multiply"
+        android:onClick="Multiply"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btDivide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:padding="10dp"
+        android:text="@string/divide"
+        android:onClick="Divide"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btPower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:padding="10dp"
+        android:text="@string/power"
+        android:onClick="Power"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
